@@ -1,5 +1,6 @@
 var express = require("express");
 var app =express();
+var path = require('path');
 //var favicon = require('serve-favicon');
 //var bodyParser = require('body-parser');
 
@@ -17,10 +18,10 @@ app.listen(port, function(err){
 });
 
 app.get('/', function(req, res){
-	//res.sendfile('./public/index.html');
-	res.sendFile("C:\\Users\\Benjamin\\workspace\\JS-Workspace\\dadabenjamin\\public\\index.html");
+	res.sendfile('./public/index.html');
+	//res.sendFile("C:\\Users\\Benjamin\\workspace\\JS-Workspace\\dadabenjamin\\public\\index.html");
 });
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname + '/public')));
 
 module.exports = app;
