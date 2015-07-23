@@ -96,13 +96,15 @@ textarea {
    ========================================================================== */
 
 body{
-   /* background: url(../images/bg.png);*/
+ background: url(../images/bg.png);
 
 }
 
 article{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
+    margin-top: 45px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    /*text-align: center;*/
 }
 
 
